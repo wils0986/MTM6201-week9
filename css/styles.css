@@ -1,0 +1,59 @@
+.dice circle{
+  fill: #F57C00;
+  transition: all .5s;
+  transform-origin: 50px 50px;
+}
+
+.dice:hover circle{
+  transform: scale(1.2);
+}
+
+.dice5 g{
+    transition: all .5s;
+    transform-origin: 100px 100px;
+}
+
+.dice5:hover g{
+    transform: scale(1.2);
+}
+
+.patterntext{
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.cls-1 {
+    fill: #ffe269;
+}
+
+.cls-2 {
+    fill: #fff;
+}
+
+.cls-3 {
+    fill: #fcf0c0;
+}
+
+.svg-wrap{
+    max-width: 300px;
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(10);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.pupil{
+    animation: move 1s infinite;
+}
+
+.svg-wrap:hover .pupil{
+  animation-play-state: paused;
+}
